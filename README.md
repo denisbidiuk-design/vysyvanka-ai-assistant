@@ -90,19 +90,43 @@ This improves maintainability, readability, and scalability.
 </div>
 
 
+<div style="padding:12px; border:1px solid #ddd; border-radius:6px;">
+  <h3>Project Structure</h3>
+  <p>The project follows a modular architecture, where each component is isolated into its own Python module. 
+  This improves maintainability, readability, and scalability.</p>
+
+  <pre style="background:#fafafa; padding:12px; border-radius:6px; border:1px solid #eee;">
 project/
 │
-├── main.py
-├── config.py
-├── config_example.py
+├── main.py                     # Entry point of the Telegram AI assistant
+├── config.py                   # Runtime configuration (API keys, tokens)
+├── config_example.py           # Public configuration template
 │
-├── system_prompt_en.md
-├── hallucination_tests_en.md
+├── system_prompt_en.md         # Core system prompt controlling assistant behavior
+├── hallucination_tests_en.md   # Safety tests preventing hallucinations
 │
 └── utils/
-├── sheets.py
-├── telegram.py
-└── gemini.py
+    ├── sheets.py               # Google Sheets logging module
+    ├── telegram.py             # Telegram bot message handling
+    └── gemini.py               # Gemini API client for LLM responses
+  </pre>
+
+  <h3 style="padding:6px; background:#fafafa; border-left:4px solid #50e3c2;">
+    Module Responsibilities
+  </h3>
+
+  <ul>
+    <li><b>main.py</b> — Starts the Telegram bot and initializes core components.</li>
+    <li><b>config.py</b> — Stores API keys, file paths, and runtime constants.</li>
+    <li><b>config_example.py</b> — Safe public configuration template for GitHub.</li>
+    <li><b>system_prompt_en.md</b> — Defines assistant behavior and safety rules.</li>
+    <li><b>hallucination_tests_en.md</b> — Contains hallucination‑prevention test cases.</li>
+    <li><b>utils/sheets.py</b> — Logs conversations to Google Sheets.</li>
+    <li><b>utils/telegram.py</b> — Handles Telegram Bot API communication.</li>
+    <li><b>utils/gemini.py</b> — Wraps Gemini API and formats prompts.</li>
+  </ul>
+</div>
+
 
 ### <div style="padding:6px; background:#fafafa; border-left:4px solid #50e3c2;">Module Responsibilities</div>
 
