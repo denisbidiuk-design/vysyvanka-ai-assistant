@@ -59,9 +59,9 @@ Steps:
 2. Open the URL  
 3. Copy the ID from the link:  
    Example:  
-   `https://docs.google.com/spreadsheets/d/13uSRhTsOhQKUFlq_EuOGUjLiZrjApStOU/edit`  
+   `https://docs.google.com/spreadsheets/d/14uSRhTsKUFlq_EuOGUjLiZrjApStOU/edit`  
    Your ID is:  
-   `13uSRhTsOhQKUFlq_EuOGUjLiZr3cd94StOU`
+   `14uSRhTsKUFlq_EuOGUjLiZrjApStOU`
 
 </div>
 
